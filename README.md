@@ -1,4 +1,8 @@
-# Filament sensor simplified
+# Filament sensor simplified for Firmata
+
+This plugin is based very heavily on the Filament Sensor Simplifed plugin by Lukáš Malatinský. I found it very useful but had so many issues with Raspberry Pis that I gave up on them and switched to a SFF PC running debian instead but, as it lacks the Pi's GPIO functionality, I had to find another solution and decided to go down the Fimrata route.
+
+This uses an Arduino with a suitable sketch installed connected via USB to provide the IO and the firmata protocol to access it, this is provided in python by the Telemtrix module.
 
 This plugin reacts to short lever microswitch output like [this](https://chinadaier.en.made-in-china.com/product/ABVJkvyMAqcT/China-1A-125VAC-on-off-Kw10-Mini-Micro-Mouse-Switch.html)
 If triggered it issues configured command to printer.
